@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { registerUser } from '../../../_actions/user_action';
 import { withRouter } from 'react-router-dom';
+import { Button } from 'antd';
 
 function RegisterPage(props) {
 
@@ -72,9 +73,11 @@ function RegisterPage(props) {
 
                 <br/>
 
-                <button type="submit">
+                {/* <button type="submit">
                     Register
-                </button>
+                </button> */}
+
+                <Button className="primary" type="submit">Register</Button>
             </form>
         </div>
     )

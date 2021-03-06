@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { withRouter } from 'react-router-dom';
+import { Button } from 'antd';
 
 function LandingPage(props) {
 
@@ -20,7 +21,8 @@ function LandingPage(props) {
             alignItems: 'center', width: '100%', height: '100vh'
         }}>
             <h2>Landing Page</h2>
-            <button onClick={onClickHandler}>Logout</button>
+            {/* <button onClick={onClickHandler}>Logout</button> */}
+            <Button className="primary" onClick={onClickHandler}>Logout</Button>
         </div>
     )
 }
